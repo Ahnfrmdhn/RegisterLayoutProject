@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TextView1"
+        style="@style/TextviewStyle"
+        android:text="Appname"
+        />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/email"
+        style="@style/EditTextStyle"
+        android:layout_marginTop="20dp"
+        app:met_floatingLabel="highlight"
+        android:hint="E-mail address"
+        android:inputType="text"
+        android:drawableEnd="@drawable/ic_baseline_email_24"
+        />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/firstname"
+        style="@style/EditTextStyle"
+        app:met_floatingLabel="highlight"
+        android:hint="First name"
+        android:inputType="text"
+        android:drawableEnd="@drawable/ic_baseline_perm_identity_24"
+        />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/lastname"
+        style="@style/EditTextStyle"
+        app:met_floatingLabel="highlight"
+        android:hint="Last name"
+        android:inputType="text"
+        android:drawableEnd="@drawable/ic_baseline_person_24"
+        />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/password"
+        style="@style/EditTextStyle"
+        app:met_floatingLabel="highlight"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableEnd="@drawable/ic_baseline_lock_24"
+        />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/confirmpass"
+        style="@style/EditTextStyle"
+        app:met_floatingLabel="highlight"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:drawableEnd="@drawable/ic_baseline_lock_open_24"
+        />
+
+    <Button
+        android:id="@+id/btnShow"
+        style="@style/ButtonStyle"
+        android:text="REGISTER"
+        android:enabled="true"
+        android:background="@drawable/rounded_button"
+        />
+
+    <Button
+        android:id="@+id/btnShow"
+        style="@style/ButtonStyle2"
+        android:text="I FORGOT MY PASS"
+        android:enabled="true"
+        android:background="@drawable/rounded_button_sec"
+        />
+
+
+
+</LinearLayout>
